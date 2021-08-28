@@ -1,6 +1,7 @@
 import React from "react";
 import LogoTitle from "./LogoTitle";
 import { useHistory } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function SignIn() {
   const history = useHistory();
@@ -24,9 +25,14 @@ function SignIn() {
           />
           <h5 className="space-y-2 text-xs font-bold mt-3 mb-1">Password</h5>
           <input className="bg-blue-100 w-full h-8" type="password" required />
-          <button className="w-full bg-[#f0c14b] p-2 text-xs mt-5 border-black hover:text-white">
+          <motion.button
+            initial={{ x: -1000 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 2, delay: 2}}
+            className="w-full bg-[#f0c14b] p-2 text-xs mt-5 border-black hover:text-white"
+          >
             Sign in
-          </button>
+          </motion.button>
         </form>
 
         <p className="text-xs p-2 mt-3 tracking-tighter w-full">
@@ -34,12 +40,15 @@ function SignIn() {
           our Privacy Notice, our Cookies Notice and our Internet-Based Ads
           Notice{" "}
         </p>
-        <button
+        <motion.button
+          initial={{ x: 1000 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 2, delay: 2 }}
           onClick={handleRegistration}
           className="w-full bg-[#f0c14b] p-2 text-xs mt-2 border-black hover:text-white"
         >
           Create Your BJS Account
-        </button>
+        </motion.button>
       </div>
     </div>
   );

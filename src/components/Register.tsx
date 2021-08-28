@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router";
 import LogoTitle from "./LogoTitle";
+import { motion } from "framer-motion";
 
 function Register() {
   const history = useHistory();
@@ -46,13 +47,16 @@ function Register() {
             required
           />
 
-          <button
+          <motion.button
+            initial={{ x: 1000 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 2, delay: 2 }}
             onClick={handleButton}
             className=" mt-5 w-full bg-[#f0c14b] p-2 text-xs mt-5
             border-black hover:text-gray-900 hover:text-white"
           >
             Click to Create Account
-          </button>
+          </motion.button>
         </form>
       </div>
     </div>
