@@ -24,7 +24,7 @@ function SignIn() {
           />
           <h5 className="space-y-2 text-xs font-bold mt-3 mb-1">Password</h5>
           <input className="bg-blue-100 w-full h-8" type="password" required />
-          <button className="w-full bg-[#f0c14b] p-2 text-xs mt-5 border-black">
+          <button className="w-full bg-[#f0c14b] p-2 text-xs mt-5 border-black hover:text-white">
             Sign in
           </button>
         </form>
@@ -36,7 +36,7 @@ function SignIn() {
         </p>
         <button
           onClick={handleRegistration}
-          className="w-full bg-[#f0c14b] p-2 text-xs mt-2 border-black hover:text-gray-900"
+          className="w-full bg-[#f0c14b] p-2 text-xs mt-2 border-black hover:text-white"
         >
           Create Your BJS Account
         </button>
