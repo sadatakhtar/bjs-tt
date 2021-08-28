@@ -37,7 +37,9 @@ function Register() {
             required
           />
 
-          <h5 className="space-y-2 text-xs font-bold mb-1 mt-3">Confirm Password</h5>
+          <h5 className="space-y-2 text-xs font-bold mb-1 mt-3">
+            Confirm Password
+          </h5>
           <input
             className="bg-blue-100 w-full h-8 border  p-2"
             type="password"
