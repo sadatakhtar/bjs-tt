@@ -9,7 +9,11 @@ function SignIn() {
     history.push("/register");
   };
   return (
-    <div className="flex flex-col justify-center items-center">
+    <motion.div
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1}}
+    transition={{ duration: 2, delay: 1 }} 
+    className="flex flex-col justify-center items-center">
       <LogoTitle />
       <div
         className="flex flex-col justify-center   
@@ -34,9 +38,9 @@ function SignIn() {
             required
           />
           <motion.button
-            initial={{ x: -1000 }}
+            initial={{ x: -1200 }}
             animate={{ x: 0 }}
-            transition={{ duration: 2, delay: 2 }}
+            transition={{ duration: 2, delay: 4 }}
             className="w-full bg-[#f0c14b] p-2 text-xs mt-5 border-black hover:text-white"
           >
             Sign in
@@ -49,16 +53,16 @@ function SignIn() {
           Notice{" "}
         </p>
         <motion.button
-          initial={{ x: 1000 }}
+          initial={{ x: 1200 }}
           animate={{ x: 0 }}
-          transition={{ duration: 2, delay: 2 }}
+          transition={{ duration: 2, delay: 4 }}
           onClick={handleRegistration}
           className="w-full bg-[#f0c14b] p-2 text-xs mt-2 border-black hover:text-white"
         >
           Create Your BJS Account
         </motion.button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

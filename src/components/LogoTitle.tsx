@@ -6,7 +6,7 @@ function LogoTitle() {
     <motion.div
     initial={{ y: -250}}
   animate={{ y: 0 }}
-  transition={{ duration: 2 }}
+  transition={{ duration: 5 }}
 
     // animate={{
     //     scale: [1,2,2,1,1],

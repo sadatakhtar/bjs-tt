@@ -9,7 +9,11 @@ function Register() {
     history.push("/");
   };
   return (
-    <div className="flex flex-col justify-center items-center">
+    <motion.div 
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1}}
+    transition={{ duration: 2, delay: 1}}
+    className="flex flex-col justify-center items-center">
       <LogoTitle />
       <div
         className="flex flex-col justify-center   
@@ -56,7 +60,7 @@ function Register() {
           />
 
           <motion.button
-            initial={{ x: 1000 }}
+            initial={{ x: 1200 }}
             animate={{ x: 0 }}
             transition={{ duration: 2, delay: 2 }}
             onClick={handleButton}
@@ -67,7 +71,7 @@ function Register() {
           </motion.button>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
