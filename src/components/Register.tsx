@@ -48,7 +48,7 @@ function Register() {
 
           <button
             onClick={handleButton}
-            className=" mt-5 w-full bg-[#f0c14b] p-2 text-xs mt-2 
+            className=" mt-5 w-full bg-[#f0c14b] p-2 text-xs mt-5
             border-black hover:text-gray-900 hover:text-white"
           >
             Click to Create Account
