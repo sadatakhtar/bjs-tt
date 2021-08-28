@@ -18,17 +18,25 @@ function SignIn() {
         <h1 className="mt-5 mr-5 text-3xl mb-5">Sign-In</h1>
         <form className="flex flex-col">
           <h5 className="space-y-2 text-xs font-bold mb-1">E-mail</h5>
-          <input
+          <motion.input
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             className="bg-blue-100 w-full h-8 border-black  p-2"
             type="email"
             required
           />
           <h5 className="space-y-2 text-xs font-bold mt-3 mb-1">Password</h5>
-          <input className="bg-blue-100 w-full h-8" type="password" required />
+          <motion.input
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="bg-blue-100 w-full h-8"
+            type="password"
+            required
+          />
           <motion.button
             initial={{ x: -1000 }}
             animate={{ x: 0 }}
-            transition={{ duration: 2, delay: 2}}
+            transition={{ duration: 2, delay: 2 }}
             className="w-full bg-[#f0c14b] p-2 text-xs mt-5 border-black hover:text-white"
           >
             Sign in

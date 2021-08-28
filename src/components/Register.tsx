@@ -18,21 +18,27 @@ function Register() {
         <h1 className="mt-5 mr-5 text-3xl mb-5">Register</h1>
         <form action="">
           <h5 className="space-y-2 text-xs font-bold mb-1">Full name</h5>
-          <input
+          <motion.input
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             className="bg-blue-100 w-full h-8 border-black  p-2"
             type="text"
             required
           />
 
           <h5 className="space-y-2 text-xs font-bold mb-1 mt-3">Email</h5>
-          <input
+          <motion.input
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             className="bg-blue-100 w-full h-8 border-black  p-2"
             type="email"
             required
           />
 
           <h5 className="space-y-2 text-xs font-bold mb-1 mt-3">Password</h5>
-          <input
+          <motion.input
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             className="bg-blue-100 w-full h-8 border-black  p-2"
             type="password"
             required
@@ -41,7 +47,9 @@ function Register() {
           <h5 className="space-y-2 text-xs font-bold mb-1 mt-3">
             Confirm Password
           </h5>
-          <input
+          <motion.input
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             className="bg-blue-100 w-full h-8 border  p-2"
             type="password"
             required
